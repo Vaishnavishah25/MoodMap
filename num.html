@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Number - MoodMap</title>
+    <link rel="stylesheet" href="nums-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Number 🎲</h1>
+        <p>Choose a number that represents your energy today!</p>
+
+        <!-- Number Selection Grid -->
+        <div class="number-grid">
+            <button class="number-box" onclick="selectNumber(0)">0</button>
+            <button class="number-box" onclick="selectNumber(1)">1</button>
+            <button class="number-box" onclick="selectNumber(2)">2</button>
+            <button class="number-box" onclick="selectNumber(3)">3</button>
+            <button class="number-box" onclick="selectNumber(4)">4</button>
+            <button class="number-box" onclick="selectNumber(5)">5</button>
+            <button class="number-box" onclick="selectNumber(6)">6</button>
+            <button class="number-box" onclick="selectNumber(7)">7</button>
+            <button class="number-box" onclick="selectNumber(8)">8</button>
+            <button class="number-box" onclick="selectNumber(9)">9</button>
+        </div>
+    </div>
+
+    <script>
+        function selectNumber(num) {
+            localStorage.setItem("selectedNumber", num); // Store user's selected number
+            
+            console.log("Selected Number:", num); // Debugging Log
+            
+            window.location.href = "emoji.html"; // Redirect to Emoji Selection Page
+        }
+    </script>
+</body>
+</html>

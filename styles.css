@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(120deg, #6A0572, #ff758c, #ff7eb3);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Smooth fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Enhanced container for modern feel */
+.container {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9); /* Increased transparency for subtle effect */
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0px 14px 26px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* Improve title contrast */
+h1 {
+    font-size: 40px;
+    color: #36014B;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-shadow: 2px 2px 8px rgba(106, 5, 114, 0.3);
+}
+
+/* Increase paragraph readability */
+p {
+    font-size: 19px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Enhanced button interaction */
+button {
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    color: white;
+    font-size: 24px;
+    padding: 16px 28px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 12px;
+    transition: 0.4s ease-in-out;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(255, 120, 180, 0.5);
+}
+
+/* Glow effect on hover */
+button:hover {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    transform: scale(1.12);
+    box-shadow: 0px 8px 18px rgba(255, 120, 180, 0.8);
+}

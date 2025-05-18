@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodMap - Welcome</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Simple fade-in effect */
+        body {
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+        
+        body.loaded {
+            opacity: 1;
+        }
+        
+        /* Improve button hover effects */
+        #startBtn {
+            background: linear-gradient(90deg, #ff758c, #ff7eb3);
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        
+        #startBtn:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 15px rgba(255, 120, 180, 0.6);
+        }
+    </style>
+</head>
+<body onload="document.body.classList.add('loaded')">
+    <div class="container">
+        <h1>Welcome to MoodMap 🌈</h1>
+        <p>Discover your emotions in a fun and meaningful way. Let’s explore your mood journey!</p>
+        
+        <!-- Start Button -->
+        <button id="startBtn">Begin Your Mood Quest 🚀</button>
+    </div>
+
+    <script>
+        document.getElementById("startBtn").addEventListener("click", function() {
+            window.location.href = "num.html"; // Redirects to Number Selection Page
+        });
+    </script>
+</body>
+</html>

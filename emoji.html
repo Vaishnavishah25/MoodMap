@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Emoji - MoodMap</title>
+    <link rel="stylesheet" href="emoji-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Select Your Mood Emoji 😀</h1>
+        <p>Your number reflects your energy. Now express your mood with an emoji!</p>
+
+        <!-- Emoji Selection Grid -->
+        <div class="emoji-grid">
+            <button class="emoji-box" onclick="selectEmoji('😊')">😊</button>
+            <button class="emoji-box" onclick="selectEmoji('😌')">😌</button>
+            <button class="emoji-box" onclick="selectEmoji('🤩')">🤩</button>
+            <button class="emoji-box" onclick="selectEmoji('😍')">😍</button>
+            <button class="emoji-box" onclick="selectEmoji('😎')">😎</button>
+            <button class="emoji-box" onclick="selectEmoji('😔')">😔</button>
+            <button class="emoji-box" onclick="selectEmoji('😡')">😡</button>
+            <button class="emoji-box" onclick="selectEmoji('😩')">😩</button>
+            <button class="emoji-box" onclick="selectEmoji('😴')">😴</button>
+            <button class="emoji-box" onclick="selectEmoji('🤯')">🤯</button>
+        </div>
+    </div>
+
+    <script>
+        function selectEmoji(emoji) {
+            localStorage.setItem("selectedEmoji", emoji); // Store emoji selection
+            
+            console.log("Selected Emoji:", emoji); // Debugging Log
+            
+            window.location.href = "color.html"; // Redirect to Color Selection Page
+        }
+    </script>
+</body>
+</html>

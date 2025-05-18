@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Mood Color - MoodMap</title>
+    <link rel="stylesheet" href="color-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Your Mood Color 🌈</h1>
+        <p>Your number and emoji reflect your vibe. Now, pick a color that completes your mood!</p>
+
+        <!-- Color Selection Grid -->
+        <div class="color-grid">
+            <button class="color-box" onclick="selectColor('Red')" style="background-color: red;">🔴 Red</button>
+            <button class="color-box" onclick="selectColor('Orange')" style="background-color: orange;">🟠 Orange</button>
+            <button class="color-box" onclick="selectColor('Yellow')" style="background-color: yellow;">🟡 Yellow</button>
+            <button class="color-box" onclick="selectColor('Green')" style="background-color: green;">🟢 Green</button>
+            <button class="color-box" onclick="selectColor('Blue')" style="background-color: blue;">🔵 Blue</button>
+            <button class="color-box" onclick="selectColor('Purple')" style="background-color: purple;">🟣 Purple</button>
+            <button class="color-box" onclick="selectColor('Black')" style="background-color: black; color:white;">⚫ Black</button>
+            <button class="color-box" onclick="selectColor('White')" style="background-color: white;">⚪ White</button>
+            <button class="color-box" onclick="selectColor('Gray')" style="background-color: gray;">🩶 Gray</button>
+        </div>
+    </div>
+
+    <script>
+        function selectColor(color) {
+            localStorage.setItem("selectedColor", color); // Store color selection
+            
+            console.log("Selected Color:", color); // Debugging Log
+
+            // Redirect to result.html instead of reloading color.html
+            window.location.href = "result.html";
+        }
+    </script>
+</body>
+</html>
